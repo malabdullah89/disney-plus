@@ -58,7 +58,7 @@ const Wrap1 = styled.div`
         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
         transform: scale(1.05);
         border-color: rgba(249, 249, 249, 0.8);
-        background-image: url("https://i.gifer.com/Jdb.gif");
+        background-image: url("/images/disney-hover.gif");
         background-size: 100%;
 
     }
@@ -85,7 +85,7 @@ const Wrap2 = styled.div`
         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
         transform: scale(1.05);
         border-color: rgba(249, 249, 249, 0.8);
-        background-image: url("https://media3.giphy.com/media/10ADhj1QPawFna/200.gif");
+        background-image: url("/images/marvel-hover.gif");
         background-size: 100%;
 
     }
@@ -113,7 +113,7 @@ const Wrap3 = styled.div`
         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
         transform: scale(1.05);
         border-color: rgba(249, 249, 249, 0.8);
-        background-image: url("https://thumbs.gfycat.com/FeminineFlawedAlbertosaurus-size_restricted.gif");
+        background-image: url("/images/star-hover.gif");
         background-size: 100%;
 
     }
@@ -141,7 +141,7 @@ const Wrap4 = styled.div`
         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
         transform: scale(1.05);
         border-color: rgba(249, 249, 249, 0.8);
-        background-image: url("https://thumbs.gfycat.com/ConfusedCommonHeron-size_restricted.gif");
+        background-image: url("/images/national-hover.gif");
         background-size: 100%;
 
     }
@@ -169,7 +169,7 @@ const Wrap5 = styled.div`
         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
         transform: scale(1.05);
         border-color: rgba(249, 249, 249, 0.8);
-        background-image: url("https://data.whicdn.com/images/312930184/original.gif");
+        background-image: url("/images/pixar-hover.gif");
         background-size: 100%;
 
     }
