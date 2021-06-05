@@ -79,6 +79,7 @@ const ImgTitle = styled.div`
     min-width: 200px;
     margin-top: 60px;
     
+    
    
 
     img {
@@ -94,7 +95,8 @@ const ImgTitle = styled.div`
 const Controls = styled.div`
     display: flex;
     align-items: center;
-    margin-top: -80px;
+    margin-top: -70px;
+    
     
     
     
@@ -129,7 +131,7 @@ const TrailerButton = styled(PlayButton)`
 `
 
 const AddButton = styled.button`
-    margin-right: 16px;
+    margin-right: 10px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -146,7 +148,7 @@ const AddButton = styled.button`
         color: white;
     }
 `
-
+    
 const GroupButton = styled(AddButton)`
 
 
@@ -156,14 +158,14 @@ const SupTitle = styled.div`
     color: rgb(249, 249, 249);
     font-size: 15px;
     min-height: 20px;
-    margin-top: 26px;
+    margin-top: 10px;
 `
 
 const Discription = styled.div`
     color: rgb(249, 249, 249);
     line-height: 1.4;
     font-size: 16px;
-    margin-top: 16px;
+    margin-top: 20px;
     max-width: 760px;
 
 `
