@@ -8,7 +8,7 @@ function Detail() {
                <img src="/images/lion-king.jpg" />
            </Background>
            <ImgTitle>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/The_Lion_King_logo.svg/1200px-The_Lion_King_logo.svg.png" />
+                <img src="/images/lion-king-logo.png" />
            </ImgTitle>
 
            <Controls>
