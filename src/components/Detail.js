@@ -156,7 +156,7 @@ const SupTitle = styled.div`
 const Discription = styled.div`
     color: rgb(249, 249, 249);
     line-height: 1.4;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 16px;
 
 `
