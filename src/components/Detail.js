@@ -54,6 +54,7 @@ const Container = styled.div`
 `
 
 const Background = styled.div`
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -76,6 +77,8 @@ const ImgTitle = styled.div`
     height: 50vh;
     width: 25vw;
     min-width: 200px;
+    margin-top: 60px;
+    
    
 
     img {
@@ -91,6 +94,9 @@ const ImgTitle = styled.div`
 const Controls = styled.div`
     display: flex;
     align-items: center;
+    margin-top: -80px;
+    
+    
     
 
 `
@@ -158,5 +164,6 @@ const Discription = styled.div`
     line-height: 1.4;
     font-size: 16px;
     margin-top: 16px;
+    max-width: 760px;
 
 `
