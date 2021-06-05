@@ -38,7 +38,28 @@ function Movies() {
                     <img src="https://wildhunt.org/wp-content/uploads/2019/03/qoe-social-1080x1080-830373.jpg" />
                 </Wrap>
 
+            </Content>
 
+            <h4>New to Disney+</h4>
+            <Content>
+                <Wrap>
+                    <img src="https://www.awesomepostersonline.com/uploads/2018-03-02/2e68cb45/be48282d96c.jpg" />
+                </Wrap>
+
+                <Wrap>
+                    <img src="https://noma.org/wp-content/uploads/2016/08/WALLE.jpg" />
+                </Wrap>
+
+                <Wrap>
+                    <img src="https://i.pinimg.com/originals/00/70/25/0070250aa91eaf693deb1e5c5f4d358b.jpg" />
+                </Wrap>
+
+                <Wrap>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81dYVmjI3YL._RI_.jpg" />
+                </Wrap>
+
+
+               
             </Content>
         </Container>
     )
