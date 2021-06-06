@@ -36,6 +36,17 @@ const Container = styled.div`
     padding: 30px 0px 26px;
     grid-gap: 25px;
     grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        display: inline-block;
+        
+     
+      }
+
+      @media only screen and (max-width: 479px) {
+        display: inline-block;
+      }
 `
 
 const Wrap1 = styled.div`
@@ -45,6 +56,21 @@ const Wrap1 = styled.div`
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        margin-top: 25px;
+         
+      
+       }
+
+       @media only screen and (max-width: 479px) {
+
+        margin-top: 25px;
+        
+      }
+
+   
 
 
     img {
@@ -72,6 +98,19 @@ const Wrap2 = styled.div`
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        margin-top: 25px;
+         
+      
+       }
+
+       @media only screen and (max-width: 479px) {
+
+        margin-top: 25px;
+        
+      }
 
 
     img {
@@ -101,6 +140,19 @@ const Wrap3 = styled.div`
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        margin-top: 25px;
+         
+      
+       }
+
+       @media only screen and (max-width: 479px) {
+
+        margin-top: 25px;
+        
+      }
+
 
     img {
         width: 100%;
@@ -128,6 +180,19 @@ const Wrap4 = styled.div`
     box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        margin-top: 25px;
+         
+      
+       }
+
+       @media only screen and (max-width: 479px) {
+
+        margin-top: 25px;
+        
+      }
 
 
     img {
@@ -157,11 +222,25 @@ const Wrap5 = styled.div`
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        margin-top: 25px;
+         
+      
+       }
+
+       @media only screen and (max-width: 479px) {
+
+        margin-top: 25px;
+        
+      }
+
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
     }
 
     &:hover {

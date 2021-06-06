@@ -18,9 +18,13 @@ function Detail() {
             } else {
 
             }
+            
            
         })
     }, [])
+   
+   
+    
 
    
 

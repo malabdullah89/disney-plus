@@ -7,6 +7,8 @@ import {  useSelector } from 'react-redux'
 function Movies() {
     const movies = useSelector(selectMovies);
 
+ 
+
   
 
     return (
@@ -62,6 +64,19 @@ const Content = styled.div`
     display: grid;
     grid-gap: 25px;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        
+     
+      }
+
+    @media only screen and (max-width: 479px) {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        
+      }
 `
 
 const Wrap = styled.div`
