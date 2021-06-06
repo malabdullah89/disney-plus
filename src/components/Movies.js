@@ -1,43 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
+import { selectMovies } from '../features/movie/movieSlice'
+import {  useSelector } from 'react-redux'
 
 function Movies() {
+    const movies = useSelector(selectMovies);
+
+  
+
     return (
         <Container>
             <h4>Recommended for you</h4>
             <Content>
-                <Wrap>
-                    <img src="https://weareentertainmentnews.com/wp-content/uploads/2020/12/scale.jpg" />
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://www.inkedmag.com/.image/t_share/MTY4ODM2MTkwOTAyOTUzMzk1/mulan-cover.jpg" />
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://creativecloud.adobe.com/content/dam/2020/12/dsc20201210_pixarsoul_ca/Pixar_Soul_Card-900x500.jpg" />
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://shopdisneyeu.scene7.com/is/image/DisneyStoreES/36632_lucacomingsoon_tb?$tb$" />
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2018/05/IMG_3185.jpg" />
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://www.vintagemovieposters.co.uk/wp-content/uploads/2018/12/IMG_3266.jpeg" />
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://whatsondisneyplus.com/wp-content/uploads/2020/09/animal-kingdom-logo-1-scaled.jpeg" />
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://wildhunt.org/wp-content/uploads/2019/03/qoe-social-1080x1080-830373.jpg" />
-                </Wrap>
-
+                { movies && 
+                    movies.map((movie) => (
+                        <Wrap key={movie.id}>
+                            <img src={movie.cardImg} />
+                       </Wrap>
+                    ))
+                    
+                }
+               
             </Content>
 
             <h4>New to Disney+</h4>
