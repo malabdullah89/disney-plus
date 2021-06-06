@@ -1,45 +1,74 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import { useParams } from 'react-router-dom'
+import db from '../firebase'
 
 function Detail() {
+    const { id } = useParams();
+    const [ movie, setMovie ] = useState()
+
+    useEffect(() => {
+        db.collection("movies")
+        .doc(id)
+        .get()
+        .then((doc) => {
+            if(doc.exists) {
+                setMovie(doc.data());
+
+            } else {
+
+            }
+           
+        })
+    }, [])
+
+   
+
+
+
     return (
         <Container>
-           <Background>
-               <img src="/images/lion-king.jpg" />
-           </Background>
-           <ImgTitle>
-                <img src="/images/lion-king-logo.png" />
-           </ImgTitle>
-
-           <Controls>
-               <PlayButton>
-                   <img src="/images/play-icon-black.png" />
-                   <span>PLAY</span>
-
-               </PlayButton>
-
-               <TrailerButton>
-               <img src="/images/play-icon-white.png" />
-               <span>TRAILER</span>
-
-               </TrailerButton>
-
-               <AddButton>
-                    <span>+</span>
-               </AddButton>
-
-               <GroupButton>
-                   <img src="/images/group-icon.png" />
-
-               </GroupButton>
-
-           </Controls>
-           <SupTitle>
-               1994 • 88m • Family, Kids • Animation
-           </SupTitle>
-           <Discription>
-           In the Pride Lands of Africa, a pride of lions rules over the animal kingdom from Pride Rock. King Mufasa and Queen Sarabi present their newborn son, Simba, to the gathering animals by Rafiki the mandrill, the kingdom's shaman and advisor.
-           </Discription>
+            { movie && (
+            <>
+                 <Background>
+                 <img src={movie.backgroundImg} />
+             </Background>
+             <ImgTitle>
+                  <img src={movie.titleImg} />
+             </ImgTitle>
+  
+             <Controls>
+                 <PlayButton>
+                     <img src="/images/play-icon-black.png" />
+                     <span>PLAY</span>
+  
+                 </PlayButton>
+  
+                 <TrailerButton>
+                 <img src="/images/play-icon-white.png" />
+                 <span>TRAILER</span>
+  
+                 </TrailerButton>
+  
+                 <AddButton>
+                      <span>+</span>
+                 </AddButton>
+  
+                 <GroupButton>
+                     <img src="/images/group-icon.png" />
+  
+                 </GroupButton>
+  
+             </Controls>
+             <SupTitle>
+                 {movie.subTitle}
+             </SupTitle>
+             <Discription>
+                 {movie.description}
+             </Discription>
+             </>
+            )}
+        
         </Container>
     )
 }
@@ -95,7 +124,7 @@ const ImgTitle = styled.div`
 const Controls = styled.div`
     display: flex;
     align-items: center;
-    margin-top: -70px;
+    
     
     
     
