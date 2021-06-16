@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Detail from './components/Detail'
 import Login from './components/Login'
+import TrialView from './components/TrailView'
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +24,10 @@ function App() {
          <Route path="/detail/:id">
            <Detail />
          </Route>
+         <Route path="/trail/:id">
+           <TrialView />
+         </Route>
+
          <Route path="/">
            <Home />
          </Route>
