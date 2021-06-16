@@ -36,7 +36,7 @@ function Detail() {
              </ImgTitle>
   
              <Controls>
-                 <PlayButton>
+                 <PlayButton href={movie.trialVideo}>
                      <img src="/images/play-icon-black.png" />
                      <span>PLAY</span>
   
