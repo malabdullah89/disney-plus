@@ -23,11 +23,6 @@ function Home() {
         })
     })
 
-    
-
-
-
-
     return (
         < Container>
             <ImgSlider />

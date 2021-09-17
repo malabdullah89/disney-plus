@@ -61,7 +61,7 @@ const NavMenu = styled.div`
     flex 1;
     margin-left: 25px;
     align-items: center;
-    padding: 0 36px;
+    padding: 36px;
     overflow-x: hidden;
 
     a {
@@ -69,6 +69,7 @@ const NavMenu = styled.div`
         align-items: center;
         padding: 0 12px;
         cursor: pointer;
+        
 
         img{
             height: 20px
