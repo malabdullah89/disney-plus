@@ -50,10 +50,41 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     padding: 0 36px;
+
+    
+    
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        flex-direction: column;
+        align-items: center;
+        
+    
+       
+
+       }
+
+       @media only screen and (max-width: 479px) {
+
+        flex-direction: column;
+        align-items: center;
+       
+      }
 `
 
 const Logo = styled.img`
     width: 80px;
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        margin: 10px;
+
+       }
+
+       @media only screen and (max-width: 479px) {
+
+        margin: 10px;
+      }
 
 `
 const NavMenu = styled.div`
@@ -64,11 +95,26 @@ const NavMenu = styled.div`
     padding: 36px;
     overflow-x: hidden;
 
+    
     a {
         display: flex;
         align-items: center;
         padding: 0 12px;
         cursor: pointer;
+
+        @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+            display: none;
+             
+          
+           }
+    
+           @media only screen and (max-width: 479px) {
+    
+            display: none;
+            
+          }
+    
         
 
         img{
@@ -110,5 +156,20 @@ const UserImg = styled.img`
     height: 48px;
     border-radius: 50%;
     cursor: pointer;
+
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+       
+        display: none;
+         
+      
+       }
+
+       @media only screen and (max-width: 479px) {
+
+        display: none;
+        
+      }
+    
 
 `

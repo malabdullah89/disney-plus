@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import db from '../firebase'
 import ReactPlayer from 'react-player'
+
 
 function Detail() {
     const { id } = useParams();
@@ -23,6 +24,7 @@ function Detail() {
            
         })
     }, [])
+    
    
     return (
         <Container>
@@ -36,11 +38,13 @@ function Detail() {
              </ImgTitle>
   
              <Controls>
-                 <PlayButton href={movie.trialVideo}>
+             <Link to={`/trail/`}>
+                     <PlayButton>
                      <img src="/images/play-icon-black.png" />
                      <span>PLAY</span>
-  
                  </PlayButton>
+             </Link>
+                 
   
                  <TrailerButton href={movie.trialVideo}>
                  <img src="/images/play-icon-white.png" />

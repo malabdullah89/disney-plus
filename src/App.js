@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import MovePlayer from './components/MovePlayer';
 
 function App() {
   return (
@@ -24,10 +25,9 @@ function App() {
          <Route path="/detail/:id">
            <Detail />
          </Route>
-         <Route path="/trail/:id">
+         <Route path="/trail">
            <TrialView />
          </Route>
-
          <Route path="/">
            <Home />
          </Route>
